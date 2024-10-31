@@ -1,0 +1,33 @@
+footer {
+    background-color: #9c6bdb;
+    text-align-last: center;
+}
+
+nav {
+    background-color: aquamarine;
+    text-align-last: center;
+    padding: 10px;
+    scale: 1.5;
+}
+
+h1 {
+    font-family: Copperplate, fantasy;
+    font-size: 3em;
+}
+
+
+
+
+
+.attractions-section {
+    display: flex;  
+    flex-wrap: wrap;
+    margin: 25px;
+    justify-content: space-around;
+}
+
+img {
+    float: left;
+    margin: 10px;
+}
+p {max-width: 420px}
