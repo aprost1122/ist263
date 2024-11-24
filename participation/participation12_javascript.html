@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Week 11 Partic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet">
+    <script>
+
+      const cuseTempAPI =
+        "https://api.weather.gov/gridpoints/BGM/52,99/forecast";
+      function getSyracuseTemp() {
+        fetch(cuseTempAPI)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+            time = Date(data.properties.periods[0].startTime);
+            temp = data.properties.periods[0].temperature;
+            forecast = data.properties.periods[0].detailedForecast;
+            icon = data.properties.periods[0].icon;
+            console.log(icon)
+            document.getElementById("icon").setAttribute("src", icon);
+            document.getElementById("time").innerHTML = time;
+            document.getElementById("temp").innerHTML = temp + "°F";
+            document.getElementById("forecast").innerHTML = forecast;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+
+
+    </script>
+    <style>
+      .weather {
+        flex-wrap: wrap;
+        width: 390px;
+        background-color: #f863da;
+        padding: 20px;
+        height: 844px;
+        color: #2e094e;
+        border-radius: 10px;
+        text-size-adjust: 2em;
+      }
+
+      #icon { 
+        width: 300px;
+        border-radius: 10px;
+        align-content: center;
+        margin: auto;
+      }
+
+      body {
+        font-family: "Bokor";
+      }
+
+      #temp {
+        font-size: 2em;
+      }
+
+      button {
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+  <div class="weather">
+    <button onclick="getSyracuseTemp()">Get Syracuse Weather</button>
+    <h2 id="cuse-weather"></h2>
+    <div>
+      <img id="icon" src="" />
+      <p id="time"></p>
+      <p id="temp"></p>
+      <p id="forecast"></p>
+    </div>
+  </div>
+  </body>
+</html>
