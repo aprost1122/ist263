@@ -1,1 +1,23 @@
-body {background-image: 0.5em;}
+
+.instruction {color: white;}
+.c1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.perfume1, .perfume2, .perfume3, .perfume4, .perfume5, .perfume6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfume1 .smell1 {
+    max-width: 100px; 
+    height: auto;  
+}
+
+.perfume1 .notes1 {
+    max-width: 40%; 
+    height: auto;  
+}
