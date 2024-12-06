@@ -5,18 +5,23 @@
         <title>Contact</title>
         <link rel="stylesheet" href="styles.css">
     </head>
+
+    
+
     <body> <!--style="text-align: center;"-->
         <nav>
-            <a href="index.html">Home</a > <span>|</span>
-            <a href="contact.html">Contact</a > <span>|</span>
-            <a href="skills.html">Skills</a > <span>|</span>
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="contact.html">Contact</a> <span>|</span>
+            <a href="skills.html">Skills</a> <span>|</span>
+            <a href="#main" class="skip">skip to content</a>
         </nav>
 
-        
-        <header><img src="../images/banner.png" alt="banner" width="100%"></header>
+        <header>
+            <img src="../images/banner.png" alt="professional me with a cat" width="100%">  
+        </header>
         
         <h1>Contact</h1>
-        <main>
+        <main id="main">
 
         <div class = group1>
             <div class="address">
@@ -41,7 +46,7 @@
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
                 <br>
-                <p>Help me get to know you</p>
+                <label for="message">Help me get to know you</label>
                     <textarea name=message rows="10" cols="30">a short self introduction</textarea>
                 <br>
                 <p>When do you want to meet?</p>
