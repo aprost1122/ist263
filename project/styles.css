@@ -1,23 +1,201 @@
 
-.instruction {color: white;}
-.c1 {
+.container1 {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
     justify-content: space-between;
 }
 
 .perfume1, .perfume2, .perfume3, .perfume4, .perfume5, .perfume6 {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 10px 20px 0px 20px;
+    margin: 15px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    flex: 1 1 calc(30% - 20px);
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
 }
 
-.perfume1 .smell1 {
-    max-width: 100px; 
-    height: auto;  
+.perfume1 img, .perfume2 img, .perfume3 img, .perfume4 img, .perfume5 img, .perfume6 img {
+    max-width: 120%; 
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Avoid extra space under the image */
 }
 
-.perfume1 .notes1 {
-    max-width: 40%; 
-    height: auto;  
+.horizontal {
+    background-color: #8a2be2;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: center;
 }
+
+.horizontal a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.horizontal :hover {
+    background-color: rgb(226, 43, 168);
+    padding: 15px;
+    text-decoration: none;
+}
+
+
+/*page1*/
+    .container0 a {
+        color: white;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 5px;
+    }
+
+
+    .container0 {
+        position: relative;
+        display: inline-block; 
+        width: 100%; 
+        height: 80%;
+        overflow: hidden;
+    }
+
+    .container0 img {
+    width: 100%; 
+    display: block; 
+    max-height: 88vh; 
+    object-fit: cover;
+    }
+
+    .container0 button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centers the button */
+        background-color: blueviolet;
+        padding: 20px;
+        border-radius: 10px;
+        border: none; 
+        cursor: pointer;
+    }
+
+    .text-overlay {
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    svg {
+        font-weight: 700;
+    }
+
+    /* perfume 1 */
+    .santal33 {
+        width: 35%;    
+        height: auto;   
+        margin: 0 40px 10px 0;      
+        display: block; 
+        float: left;
+    }
+      
+
+    .notes1 {
+        clear: both;
+        margin: 0;
+        width: 98%;
+    }
+
+   .perfume1 ul {
+        padding-top: 90px;
+    }
+
+    /*perfume2*/
+    .perfume2 img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 42px;
+    }
+
+    /*perfume3*/
+    .perfume3 img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 42px;
+    }
+
+    /*perfume6*/
+    .perfume6 img{
+        padding: 20px 0px;
+    }
+
+    .perfume4 img, .perfume5 img, .perfume6 img{
+        width: 100%;
+    }
+/*page2*/
+
+    .theophrastus_teaching {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .plants, .fact1, .fact2, .fact3, .fact4, .fact5{
+        background-color: aqua;
+        padding: 10px 20px 0px 20px;
+        margin: 15px;
+        border-radius: 20px;
+        flex: 1 1 calc(30% - 20px);
+        box-sizing: border-box;
+        height: auto;
+        position: relative;
+        box-sizing: border-box; 
+    }
+    
+    .portrait {
+        float: right;
+        margin: 5px;
+    }
+
+    .vertical ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 5%;
+        height: 100%; /* Full height */
+        position: fixed;
+        overflow: auto; 
+        background-color: blueviolet;
+        text-align: center;
+    }   
+
+    .vertical a {
+        display: block;
+        width: 60px;
+        color: white;
+        text-decoration: none;
+        margin: 20px 0 20px 0;
+    }
+
+    .vertical a:hover {
+        background-color: rgb(226, 43, 168);
+        text-decoration: none;
+    }
+    
