@@ -1,36 +1,4 @@
 
-.container1 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: space-between;
-}
-
-.container2 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: space-between;
-}
-
-.perfume1, .perfume2, .perfume3, .perfume4, .perfume5, .perfume6 {
-    padding: 10px 20px 0px 20px;
-    margin: 15px;
-    background-color: aquamarine;
-    border-radius: 20px;
-    flex: 1 1 calc(30% - 20px);
-    box-sizing: border-box; /* Ensures padding and border are included in width */
-    height: auto;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.perfume1 img, .perfume2 img, .perfume3 img, .perfume4 img, .perfume5 img, .perfume6 img {
-    max-width: 120%; 
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Avoid extra space under the image */
-}
-
 .horizontal {
     background-color: #8a2be2;
     margin-bottom: 10px;
@@ -52,150 +20,293 @@
     text-decoration: none;
 }
 
+body {margin: 0;}
+.vertical ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 5%;
+    height: 100%; /* Full height */
+    position: fixed;
+    overflow: auto; 
+    background-color: blueviolet;
+    text-align: center;
+}   
+
+.vertical a {
+    display: block;
+    /*width: 60px;*/
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 20px 0 20px 0;
+}
+
+.vertical a:hover {
+    background-color: rgb(226, 43, 168);
+    text-decoration: none;
+    padding: 15px;
+    margin: 20px 0 20px 0;
+}
 
 /*page1*/
-    .container0 a {
-        color: white;
-        text-decoration: none;
-        font-size: 2em;
-        margin: 5px;
-    }
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+}
 
 
-    .container0 {
-        position: relative;
-        display: inline-block; 
-        width: 100%; 
-        height: 80%;
-        overflow: hidden;
-    }
+.perfume1, .perfume2, .perfume3, .perfume4, .perfume5, .perfume6 {
+    padding: 10px 20px 0px 20px;
+    margin: 15px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    flex: 1 1 calc(30% - 20px);
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+}
 
-    .container0 img {
+.perfume1 img, .perfume2 img, .perfume3 img, .perfume4 img, .perfume5 img, .perfume6 img {
+    max-width: 120%; 
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Avoid extra space under the image */
+}
+.container0 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 5px;
+}
+
+
+.container0 {
+    position: relative;
+    display: inline-block; 
     width: 100%; 
+    height: 80%;
+    overflow: hidden;
+}
+
+.container0 img {
+width: 100%; 
+display: block; 
+max-height: 88vh; 
+object-fit: cover;
+}
+
+.container0 button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the button */
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    border: none; 
+    cursor: pointer;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+svg {
+    font-weight: 700;
+}
+
+/* perfume 1 */
+.santal33 {
+    width: 35%;    
+    height: auto;   
+    margin: 0 40px 10px 0;      
     display: block; 
-    max-height: 88vh; 
-    object-fit: cover;
-    }
+    float: left;
+}
+    
 
-    .container0 button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Centers the button */
-        background-color: blueviolet;
-        padding: 20px;
-        border-radius: 10px;
-        border: none; 
-        cursor: pointer;
-    }
+.notes1 {
+    clear: both;
+    margin: 0;
+    width: 98%;
+}
 
-    .text-overlay {
-        position: absolute;
-        bottom: -18px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-        text-align: center;
-        width: 100%;
-        font-size: 1.5em;
-        font-weight: 700;
-        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-    }
+.perfume1 ul {
+    padding-top: 90px;
+}
 
-    svg {
-        font-weight: 700;
-    }
+/*perfume2*/
+.perfume2 img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 42px;
+}
 
-    /* perfume 1 */
-    .santal33 {
-        width: 35%;    
-        height: auto;   
-        margin: 0 40px 10px 0;      
-        display: block; 
-        float: left;
-    }
-      
+/*perfume3*/
+.perfume3 img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 42px;
+}
 
-    .notes1 {
-        clear: both;
-        margin: 0;
-        width: 98%;
-    }
+/*perfume6*/
+.perfume6 img{
+    padding: 20px 0px;
+}
 
-   .perfume1 ul {
-        padding-top: 90px;
-    }
+.perfume4 img, .perfume5 img, .perfume6 img{
+    width: 100%;
+}
 
-    /*perfume2*/
-    .perfume2 img{
-        width: 80%;
-        height: auto;
-        margin-bottom: 20px;
-        margin-left: 42px;
-    }
-
-    /*perfume3*/
-    .perfume3 img{
-        width: 80%;
-        height: auto;
-        margin-bottom: 20px;
-        margin-left: 42px;
-    }
-
-    /*perfume6*/
-    .perfume6 img{
-        padding: 20px 0px;
-    }
-
-    .perfume4 img, .perfume5 img, .perfume6 img{
-        width: 100%;
-    }
 /*page2*/
 
-    .theophrastus_teaching {
-        max-width: 50%;
-        height: auto;
-    }
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-bottom: 15px;
+    margin-right: 0;
+    box-sizing: border-box;
+    height: auto;
+    position: relative;
+    box-sizing: border-box; 
+    gap: 15px;
+}
 
-    .plants, .fact1, .fact2, .fact3, .fact4, .fact5{
-        background-color: aqua;
-        padding: 10px 20px 0px 20px;
-        margin: 15px;
-        border-radius: 20px;
-        flex: 1 1 calc(30% - 20px);
+
+/*plant*/
+.plants img {
+    width: 40%;
+}
+/*fact1 theophrastus teachin*/
+.fact1 img {
+    width: 85%;
+}
+
+/*fact2*/
+.fact2 img {
+    width: 50%;
+}
+
+/*fact3*/
+.rose_water {
+    width: 70%;
+}
+
+/*fact4 Galen*/
+.fact4 img {
+    width: 40%;
+}
+
+/*fact5*/
+.perfume_bottle {
+        height: auto; /* Maintains the image's aspect ratio */
+        max-width: 100%; /* Prevents it from exceeding the container size */
+        display: block; /* Removes extra space below the image */
+        margin-bottom: 10px;
+}
+
+/*page3*/
+.container3 { 
+        display: grid;
+        grid-template-areas:
+        "p p "
+        "s1 s2 "
+        "s1 s3 "
+        "s4 s4 ";
+        grid-template-rows: auto auto auto;
+        padding: 15px;
+        margin-left: 6%;
         box-sizing: border-box;
         height: auto;
         position: relative;
         box-sizing: border-box; 
-    }
-    
-    .portrait {
-        float: right;
-        margin: 5px;
+        gap: 15px;
+        align-items: stretch;
     }
 
-    .vertical ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 5%;
-        height: 100%; /* Full height */
-        position: fixed;
-        overflow: auto; 
-        background-color: blueviolet;
-        text-align: center;
-    }   
+div h2 {
+    grid-area: p;
+    align-items: stretch;
+}
+.s1 {
+    grid-area: s1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
 
-    .vertical a {
-        display: block;
-        width: 60px;
-        color: white;
-        text-decoration: none;
-        margin: 20px 0 20px 0;
-    }
+.s2 {
+    grid-area: s2;
+    background-color: rgb(251, 255, 0);
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
 
-    .vertical a:hover {
-        background-color: rgb(226, 43, 168);
-        text-decoration: none;
-    }
-    
+.s3 {
+    grid-area: s3;
+    background-color: rgb(251, 255, 0);
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.s2, .s3 {
+    height: 100%; /* Ensure they stretch to equal height */
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.s4 {
+    grid-area: s4;
+    background-color: rgb(251, 255, 0);
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.s1 img {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+}
+
+.s11, .s12, .s13, .s14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%; /* Adjust as needed */
+    min-height: 150px; /* Ensure consistent height */
+    background-color: rgb(251, 255, 0);
+    padding: 10px 20px 0px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.s2 img, .s3 img {
+    width: 60%;
+    margin-bottom: 20px;
+}
