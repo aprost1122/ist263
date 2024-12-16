@@ -220,11 +220,9 @@ svg {
 
 
 
-h3 {
-    margin-left: 6%; 
-    padding: 15px;
+h2 {
+    padding: 5px;
     box-sizing: border-box;
-    max-width: calc(100% - 6%);
     align-items: center;
 
 }
@@ -372,6 +370,7 @@ h3 {
 .tip1, .tip2 {
     background-color: #ff9d00;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .container4 img {
@@ -396,7 +395,7 @@ h3 {
     padding: 15px;
 }
 
-.container5 p {
+.container3 p, .container5 p {
     font-size: 1.2em;
 }
 
@@ -406,4 +405,8 @@ footer {
 
 li {
     margin-bottom: 10px;
+}
+
+.container4 li {
+    font-size: 1.15em;
 }
