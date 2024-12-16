@@ -82,10 +82,10 @@ body {margin: 0;}
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Avoid extra space under the image */
 }
-.container0 a {
+.container0 button {
     color: white;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1em;
     margin: 5px;
 }
 

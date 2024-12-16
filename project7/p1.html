@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Home</title>
+    <script>function equiz() {
+        console.log("Preparing for the quiz...");
+      }</script>
 </head>
+
 <body>
 <nav class="horizontal">
     <a href="p1.html" style="background-color: rgb(226, 43, 168); padding: 15px;">Home</a> <!-- combine take quiz and perfumes on the same page-->
@@ -17,7 +21,7 @@
 
 <div class="container0">
 <img src="media/bg1.png" alt="sand">
-<button><a href="quiz.html" class="button">Take Quiz!</a></button>
+<button onclick="equiz(); window.location.href='quiz.html';">Take Quiz!</button>
 <div class="text-overlay">
     <p>scroll down for the famous perfumes as an intorduction to scents <br> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="6 9 12 15 18 9"></polyline>
