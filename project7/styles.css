@@ -134,12 +134,16 @@ svg {
     font-weight: 700;
 }
 
-h4 {
-    width: 60%;
+ h1 {
+    padding-top: 20px;
     text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    margin-top: 10px;
+    font-size: large;
+    margin: auto;
+
+}
+
+.introduction {
+    padding-top: 35px;
 }
 
 /*.ending {
@@ -398,4 +402,8 @@ h3 {
 
 footer {
     margin-left: 10px;
+}
+
+li {
+    margin-bottom: 10px;
 }
